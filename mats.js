@@ -1,9 +1,7 @@
 // author Adam G. Freeman, adamgf@gmail.com 01/26/2019
 // Of course this is just a tiny subset of all the mat stuff ...
-import { NativeModules } from 'react-native';
 
-const  { RNOpencv3 } = NativeModules;
-import { CvType } from './constants';
+import RNOpencv3 from './spec/turbomodule/NativeRNOpencv3'
 
 export class Mat {
   constructor(numRows, numCols, cvtype, scalarval) {
