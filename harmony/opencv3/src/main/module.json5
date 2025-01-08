@@ -1,0 +1,9 @@
+{
+  "module": {
+    "name": "opencv3",
+    "type": "har",
+    "deviceTypes": [
+      "default"
+    ]
+  }
+}

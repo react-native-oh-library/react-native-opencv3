@@ -1,15 +1,10 @@
 {
   "name": "@react-native-oh-tpl/react-native-opencv3",
+  "main": "index.js",
   "version": "1.0.8",
-  "_integrity": "",
-  "_location": "/react-native-opencv3",
-  "_phantomChildren": {},
-  "_requiredBy": [
-    "/"
-  ],
-  "bundleDependencies": false,
   "dependencies": {
-    "react-native-opencv3": "1.0.8"
+    "react-native-opencv3": "1.0.8",
+    "react-native-fs": "^2.13.3"
   },
   "deprecated": false,
   "description": "OpenCV+contrib ported to React-Native",
@@ -17,15 +12,31 @@
     "react-native OpenCV"
   ],
   "license": "BSD",
-  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "codegen-lib": "react-native codegen-lib-harmony --no-safety-check --npm-package-name react-native-opencv3 --cpp-output-path ../harmony/opencv3/src/main/cpp/generated --ets-output-path ../harmony/opencv3/src/main/ets/generated --turbo-modules-spec-paths ./spec/turbomodule  --arkts-components-spec-paths ./spec/fabric"
+  },
   "peerDependencies": {
-    "react-native": "*",
-    "react-native-fs": "*"
+    "react": "*",
+    "react-native": "*"
+  },
+  "devDependencies": {
+    "@rnoh/react-native-harmony-cli": "npm:@react-native-oh/react-native-harmony-cli@^0.0.27",
+    "@react-native-community/cli": "latest"
   },
   "harmony": {
     "alias": "react-native-opencv3"
   },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  }
+  "files": [
+    "harmony",
+    "spec",
+    "License",
+    "package.json",
+    "constants.js",
+    "coretypes.js",
+    "cvimage.js",
+    "downloadAssetSource.js",
+    "index.js",
+    "mats.js"
+  ]
 }

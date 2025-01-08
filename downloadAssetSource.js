@@ -59,4 +59,4 @@ async function downloadAssetSource(uri) {
   })
 }
 
-module.exports = downloadAssetSource;
+export {downloadAssetSource}
